@@ -2,6 +2,7 @@
 let driver = {}
 
 function updateDriverWithKeyAndValue (driver, key, value) {
-  driver[key] = value
-  return driver
+  const newDriver = {...driver}
+  newDriver[key] = value
+  return newDriver
 }
